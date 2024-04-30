@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>LadyLife Wellness</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="https://us.123rf.com/450wm/nnsmile/nnsmile2403/nnsmile240301949/226833635-cancer-awareness-ribbon-vector-illustration-cancer-awareness-month-campaign.jpg?ver=6">
+</head>
+
+<body>
+
+  <!-- Navigation bar -->
+  <div class="navbar-container">
+    <div class="navbar">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="#impact">Impact</a></li>
+        <li><button id="theme-button">Toggle Dark Mode</button></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Header Container -->
+  <div class="header-container revealable">
+    <div class="header-item">
+      <img id="header-img" src="https://images.unsplash.com/photo-1559251606-c623743a6d76?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Header Image">
+    </div>
+    <div class="header-item">
+      <h1>LadyLife Wellness</h1>
+    </div>
+  </div>
+
+  <!-- Content Container -->
+  <div class="content-container revealable">
+    <div class="content">
+      <!-- Other content below the header -->
+
+      <h3><span class="title-font">Educating, Empowering, and Supporting Women's Journeys</span></h3>
+
+      <!-- Buttons -->
+      <button onclick="window.location.href='index2.html'" type="button">Prevention & Early Detection</button>
+      <button onclick="window.location.href='resources.html'" type="button">Resources</button>
+      <button onclick="window.location.href='BreastCancer.html'" type="button">Breast Cancer</button>
+      <button type="button">LadyLife Chatroom</button>
+  
+
+
+
+      <!-- About -->
+      <h2>What is LadyLife Wellness?</h2>
+      <p>Breast cancer stands as a significant health concern for women globally. LadyLife Wellness is dedicated to providing education and support specifically tailored to those affected by breast cancer. Our platform offers resources and support to help women navigate their journey through diagnosis, treatment, and survivorship, reminding women that they are not alone.</p>
+
+      <!-- Data -->
+      <h3>Data</h3>
+      <img src="https://canceratlas.cancer.org/file-download/?file=https://canceratlas.cancer.org/wp-content/uploads/2019/10/Ch12_Breast_most-download.png" />
+      <h4>Breast cancer stands as the predominant form of cancer affecting women globally. It holds the title of the most frequently occurring cancer among women in 157 out of 185 countries across the world.</h4>
+
+      <iframe width="500" height="315" src="https://www.youtube.com/embed/GbbVTUduW3Q"></iframe>
+
+      <h3>What do people who are diagnosed with breast cancer have in common?</h3>
+      <p>People affected by breast cancer typically exhibit a common feature characterized by genetic variations, commonly referred to as mutations, present in the DNA of their breast cells. DNA, serving as the foundational genetic material of cells, functions as a blueprint containing directives that dictate the regulation of cell growth, governing both the initiation and cessation of cellular proliferation.</p>
+
+      <h3>Can breast cancer survivors live long lives?</h3>
+      <p>Survivors of breast cancer can indeed lead long and fulfilling lives post-diagnosis and treatment. As per a recent report by the American Cancer Society (2019–2020), the relative survival rate over a 15-year period for individuals with breast cancer stands at 80%.</p>
+
+      <p>However, the long-term survival prospects vary considerably depending on the stage of the cancer. For instance, the National Cancer Institute (NCI) indicates that the percentage of individuals surviving ten years or more with distant breast cancer is less than 15%. Nevertheless, ongoing advancements in treatment options offer hope for improved outcomes in cases of distant breast cancer.</p>
+
+      <h3>How common is breast cancer in the United states?</h3>
+      <p>In the United States, the population of women with a breast cancer history surpasses four million, encompassing those undergoing treatment and those who have completed it.</p>
+
+      <a class="" href="https://www.who.int/news-room/fact-sheets/detail/breast-cancer">
+        <article>
+          <h3>Breast Cancer Overview</h3>
+          <p>A brief overview of breast cancer</p>
+        </article>
+      </a>
+
+      <a class="" href="https://www.cancer.gov/news-events/cancer-currents-blog/2020/breast-cancer-survival-exercise">
+        <article>
+          <h3>Breast Cancer & Exercise</h3>
+          <p>Regular Exercise can help improve breast cancer survival rates in women</p>
+        </article>
+      </a>
+    </div>
+  </div>
+
+  <!-- Petition Section -->
+  <div class="petition revealable" id="petition">
+    <h2>Sign Our Petition 📢</h2>
+    <div class="petition-container">
+      <div class="petition-para">
+        <p>
+          Breast cancer remains a pressing issue affecting millions of women worldwide. Despite advancements in research and treatment, disparities in access to early detection and quality care persist, disproportionately impacting underserved communities. Every woman deserves the opportunity for early detection, timely treatment, and support throughout their journey with breast cancer. It's imperative that we come together to advocate for improved screening programs, increased funding for research, and better support services for those affected. Let's stand united in the fight against breast cancer. Join us in raising awareness and supporting initiatives aimed at improving outcomes for women battling this disease. Sign the petition today to prioritize breast cancer awareness, research, and care!
+          </p>
+      </div>
+      <div class="signatures-container">
+        <div class="signatures">
+          <p>🖊️ Maria from Brooklyn supports this.</p>
+          <p>🖊️ Rana from Manhattan supports this.</p>
+          <p>🖊️ Amelia from Queens supports this.</p>
+        </div>
+        <p id="counter">3 people have signed this petition and support this</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sign Petition Form -->
+  <form id="sign-petition" title="sign-petition">
+    <!-- Input field for name -->
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <!-- Input field for hometown -->
+    <label for="hometown">Hometown:</label>
+    <input type="text" id="hometown" name="hometown" required>
+
+    <!-- Hidden input field for email address -->
+    <label for="Email">Email:</label>
+    <input type="email" id="email" name="email" required>
+  </form>
+
+  <!-- Sign Now Button -->
+  <button id="sign-now-button">Sign Now</button>
+
+  <!-- Modal -->
+  <div id="thanks-modal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <div id="modal-text-container">
+        <p id="thanks-modal-content">Thank You</p>
+        <!-- Add the close button -->
+        <button id="close modal">Close</button>
+        <!-- text here -->
+        <!-- button here (stretch feature) -->
+      </div>
+      <!-- image here-->
+      <!-- Image displayed after petition submission -->
+      <img src="https://media.istockphoto.com/id/1434948699/vector/pink-ribbon-symbol-with-heart.jpg?s=612x612&w=0&k=20&c=HQWCKivIJX78ykyBW2-M1eT1MUekKtX_Cc2yQr23wak=" alt="Thank You Image">
+    </div>
+
+  </div>
+
+  <!-- Footer Container -->
+  <!-- <div class="footer-container">
+    <div class="footer">
+      <a href="https://example.com" target="_blank">External Link 1</a>
+      <a href="https://example.com" target="_blank">External Link 2</a>
+    </div>
+  </div> -->
+
+  <!-- Link the JavaScript file -->
+  <script src="index.js"></script>
+
+</body>
+  <div class="footer">
+      <a href="prevention_early_detection.html">Prevention & Early Detection</a>
+  </div>
+  </body>
+</html>
