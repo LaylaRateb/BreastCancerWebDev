@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breast Cancer - LadyLife Wellness</title>
+    <link rel="stylesheet" href="style3.css"> <!-- Link to your main CSS file -->
+    <style>
+        /* Import the script font from Google Fonts */
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap'); /* Example script font: Dancing Script Bold */
+
+        /* General styles for the FAQ page */
+        body {
+            display: flex; /* Use flexbox for layout */
+            flex-direction: column; /* Stack children vertically */
+            align-items: center; /* Center children horizontally */
+            justify-content: center; /* Center children vertically */
+            margin: 0; /* Remove default margin */
+            font-family: 'Times New Roman', Times, serif; /* Set font family */
+            text-align: center; /* Center text */
+            background-color: #f9f9f9; /* Light background */
+            transition: background-color 0.3s, color 0.3s; /* Smooth transition for dark mode */
+        }
+
+        /* Navigation bar styles */
+        .navbar-container {
+            background-color: white; /* Background color for the navbar */
+            color: black; /* Text color for the navbar */
+            position: fixed; /* Fix the navbar to the top */
+            width: 100%; /* Full width */
+            top: 0; /* Align to the top */
+            z-index: 1000; /* Ensure it stays on top of other content */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+        }
+
+        .navbar {
+            display: flex; /* Use flexbox for navbar items */
+            justify-content: center; /* Center the navbar items */
+            padding: 10px 0; /* Add padding for vertical spacing */
+        }
+
+        .navbar ul {
+            list-style-type: none; /* Remove default list styling */
+            padding: 0; /* Remove padding */
+            margin: 0; /* Remove margin */
+            display: flex; /* Display items in a row */
+        }
+
+        .navbar ul li {
+            margin: 0 10px; /* Space between links */
+        }
+
+        .navbar ul li a {
+            color: black; /* Black text for navigation links */
+            text-decoration: none; /* Remove underline */
+            padding: 5px 10px; /* Padding around text */
+            display: inline-block; /* Ensure padding is applied correctly */
+            font-weight: normal; /* Normal weight by default */
+            transition: font-weight 0.3s, color 0.3s; /* Smooth transition for font-weight and color */
+        }
+
+        .navbar ul li a:hover {
+            font-weight: bold; /* Make text bold on hover */
+            color: black; /* Optional: Change color on hover */
+        }
+
+        /* Button styles */
+        .navbar ul li button {
+            background-color: transparent; /* No background for the button */
+            border: 1px solid black; /* Thin border for the button */
+            color: black; /* Black text for the button */
+            cursor: pointer; /* Pointer cursor for button */
+            font-size: 1em; /* Font size for button */
+            font-family: 'Times New Roman', serif; /* Apply Times New Roman font to the button */
+            padding: 5px 15px; /* Padding around the button text */
+            border-radius: 5px; /* Rounded corners for the button */
+            transition: background-color 0.3s, border-color 0.3s, color 0.3s; /* Smooth transition for hover effects */
+        }
+
+        .navbar ul li button:hover {
+            background-color: #FF1493; /* Pink background on hover */
+            border-color: #FF1493; /* Pink border on hover */
+            color: white; /* White text color on hover */
+        }
+
+        /* Dark mode styles */
+        body.dark-mode {
+            background-color: #333; /* Dark background color */
+            color: #ccc; /* Light text color */
+        }
+
+        body.dark-mode .navbar-container {
+            background-color: #222; /* Dark background for the navbar in dark mode */
+        }
+
+        body.dark-mode .navbar ul li a {
+            color: #ccc; /* Light text color for navbar links in dark mode */
+        }
+
+        body.dark-mode .header-container {
+            background-color: #444; /* Dark background for the header in dark mode */
+        }
+
+        body.dark-mode .facts {
+            background-color: #555; /* Dark background for the facts container */
+            color: #eee; /* Light text color for the facts */
+        }
+
+        body.dark-mode img {
+            filter: brightness(80%); /* Darken images for dark mode */
+        }
+
+        /* Header styles */
+        .header-container {
+            background-color: lightpink; /* Pink background for the header */
+            padding: 20px; /* Padding around the header content */
+            width: 100%; /* Full width */
+            box-sizing: border-box; /* Include padding in width calculation */
+            padding-top: 80px; /* Space for fixed navbar */
+            text-align: center; /* Center the header text */
+            transition: background-color 0.3s; /* Smooth transition for dark mode */
+        }
+
+        .header-container h2.main-title {
+            font-family: 'Dancing Script', cursive; /* Script font for the title */
+            font-size: 2.5em; /* Adjust this value to set the font size */
+            font-weight: bold; /* Make the title bold */
+            color: #000; /* Black text color */
+            margin: 0; /* Remove default margin */
+            background-color: lightpink; /* Pink background color */
+            padding: 10px; /* Add padding to highlight text */
+            border-radius: 5px; /* Optional: rounded corners for the background */
+            display: inline-block; /* Adjust width based on content */
+        }
+
+        /* Container styles */
+        .container {
+            width: 80%; /* Use 80% width of the page */
+            max-width: 1000px; /* Maximum width for large screens */
+        }
+
+        .video-container {
+            margin: 20px 0; /* Margin above and below the video */
+            position: relative; /* Position for iframe */
+            padding-bottom: 50%; /* 4:3 aspect ratio */
+            height: 0; /* No height initially */
+            overflow: hidden; /* Hide overflow */
+            max-width: 600px; /* Smaller width for the video */
+            width: 100%; /* Full width */
+            margin-left: auto; /* Center the container */
+            margin-right: auto; /* Center the container */
+        }
+
+        .video-container iframe {
+            position: absolute; /* Position iframe absolutely */
+            top: 0; /* Align to top */
+            left: 0; /* Align to left */
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+        }
+
+        .video-title {
+            margin: 20px 0; /* Margin above and below the title */
+            font-size: 1.5em; /* Adjust the font size as needed */
+            font-weight: bold; /* Make the title bold */
+            font-family: 'Times New Roman', serif; /* Times New Roman font */
+        }
+
+        /* Facts section styles */
+        .facts {
+            margin: 20px auto; /* Center the facts container */
+            padding: 20px; /* Padding inside the facts container */
+            background-color: #f9f9f9; /* Light background for contrast */
+            border: 1px solid #ddd; /* Light border */
+            width: 80%; /* Adjust width to fit better on the page */
+            max-width: 800px; /* Maximum width for the facts section */
+            border-radius: 10px; /* Rounded corners for a softer look */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+            transition: background-color 0.3s, color 0.3s; /* Smooth transition for dark mode */
+        }
+
+        .facts h2 {
+            font-family: 'Times New Roman', serif; /* Set font to Times New Roman */
+            color: #ff69b4; /* Pink color for the heading */
+            font-size: 2em; /* Adjust the font size as needed */
+            margin-top: 0; /* Remove default margin */
+        }
+
+        .facts ul {
+            list-style-type: none; /* Remove default bullets */
+            padding: 0; /* Remove default padding */
+        }
+
+        .facts li {
+            margin: 15px 0; /* Space between list items */
+            font-size: 1.2em; /* Slightly larger font size for readability */
+            position: relative; /* For icon placement */
+            padding-left: 30px; /* Space for the icon */
+            color: #333; /* Black color for the list items */
+        }
+
+        .facts li::before {
+            content: "✔"; /* Checkmark icon */
+            color: #ff69b4; /* Pink color for the icon */
+            position: absolute; /* Position the icon absolutely */
+            left: 0; /* Align to the left */
+            top: 0; /* Align to the top */
+            font-size: 1.5em; /* Icon size */
+        }
+
+        img {
+            width: 100%; /* Make images responsive */
+            max-width: 600px; /* Maximum width for images */
+            height: auto; /* Maintain aspect ratio */
+            margin-left: auto; /* Center the image */
+            margin-right: auto; /* Center the image */
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation bar -->
+    <div class="navbar-container">
+        <div class="navbar">
+            <ul>
+                <!-- Navigation links -->
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="FAQs.html">FAQs</a></li>
+                <li><a href="Resources.html">Resources</a></li>
+                <li><a href="BreastCancer.html">Breast Cancer</a></li>
+                <!-- Button to toggle dark mode -->
+                <li><button id="theme-button">Toggle Dark Mode</button></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <div class="header-container">
+        <h2 class="main-title">Breast Cancer</h2> <!-- Main title for the page -->
+    </div>
+
+    <!-- Main content -->
+    <div class="container">
+        <div class="image-with-text">
+            <!-- Image that checks for breast cancer early detection -->
+            <img src="https://www.oncostem.com/blog/wp-content/uploads/2022/05/self_breast_examination_low_res.jpg" alt="Breast Cancer Early Detection" />
+
+            <!-- Title for the video -->
+            <div class="video-title">Breast Cancer Explained</div>
+
+            <!-- Video about detecting breast cancer -->
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/Ero0bDDdw_U" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
+            <!-- Placeholder for additional text about breast cancer resources -->
+            <p></p>
+        </div>
+    </div>
+
+    <!-- Breast cancer facts section -->
+    <div class="facts">
+        <h2>Breast Cancer Facts</h2> <!-- Heading for the facts section -->
+        <ul>
+            <!-- List of facts about breast cancer -->
+            <li>Breast cancer is one of the most common cancers in women worldwide.</li>
+            <li>Early detection through screening can greatly increase the chances of successful treatment.</li>
+            <li>Breast cancer can affect both men and women, though it is much more common in women.</li>
+            <li>Genetics, lifestyle, and environmental factors can all influence the risk of developing breast cancer.</li>
+            <li>Regular self-exams and mammograms are recommended for early detection.</li>
+        </ul>
+    </div>
+
+    <!-- JavaScript for dark mode toggle -->
+    <script>
+        // Check if dark mode is enabled in local storage
+        document.addEventListener('DOMContentLoaded', () => {
+            const themeButton = document.getElementById('theme-button'); // Get the theme toggle button
+            const darkMode = localStorage.getItem('dark-mode') === 'true'; // Check if dark mode is saved in local storage
+
+            // If dark mode is saved, add the class to the body
+            if (darkMode) {
+                document.body.classList.add('dark-mode');
+            }
+
+            // Add click event listener to toggle dark mode
+            themeButton.addEventListener('click', () => {
+                const isDarkMode = document.body.classList.toggle('dark-mode'); // Toggle dark mode class
+                localStorage.setItem('dark-mode', isDarkMode); // Save the preference in local storage
+            });
+        });
+    </script>
+</body>
+</html>
