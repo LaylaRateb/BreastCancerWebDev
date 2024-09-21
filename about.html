@@ -4,27 +4,156 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css"> <!-- Link to an external CSS file -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap'); /* Importing a custom font */
+
+        /* General styles for the page */
+        body {
+            font-family: 'Times New Roman', Times, serif; /* Setting the font family */
+            text-align: center; /* Center align text */
+            margin: 0; /* Remove default margin */
+            background-color: #f9f9f9; /* Background color of the page */
+            transition: background-color 0.3s, color 0.3s; /* Smooth transition for background and text color */
+        }
+
+        /* Navigation bar styles */
+        .navbar-container {
+            background-color: white; /* Background color of the navbar */
+            color: black; /* Text color of the navbar */
+            position: fixed; /* Fixed position at the top */
+            width: 100%; /* Full width */
+            top: 0; /* Position at the top */
+            padding: 10px; /* Padding inside the navbar */
+            z-index: 1000; /* Ensure the navbar is on top of other elements */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow for a slight elevation effect */
+            transition: background-color 0.3s; /* Smooth transition for background color */
+        }
+
+        .navbar {
+            display: flex; /* Use flexbox for layout */
+            justify-content: center; /* Center the navbar items */
+            align-items: center; /* Align items vertically */
+            padding: 10px 0; /* Padding above and below navbar */
+            max-width: 1200px; /* Maximum width of the navbar */
+            margin: 0 auto; /* Center the navbar container */
+        }
+
+        .navbar ul {
+            list-style-type: none; /* Remove bullet points from list */
+            padding: 0; /* Remove padding */
+            margin: 0; /* Remove margin */
+            display: flex; /* Keep the items in a row */
+            justify-content: center; /* Center the list items */
+        }
+
+        .navbar ul li {
+            margin: 0 15px; /* Adjust spacing between links */
+        }
+
+        .navbar ul li a {
+            color: black; /* Link text color */
+            text-decoration: none; /* Remove underline from links */
+            padding: 5px 10px; /* Padding around links */
+            display: inline-block; /* Make links behave like buttons */
+            font-weight: normal; /* Normal font weight */
+            transition: font-weight 0.3s, color 0.3s; /* Smooth transition for hover effects */
+        }
+
+        .navbar ul li a:hover {
+            font-weight: bold; /* Bold font on hover */
+            color: black; /* Color on hover */
+        }
+
+        .navbar ul li button {
+            background-color: white; /* Button background color */
+            border: 1px solid black; /* Button border */
+            color: black; /* Button text color */
+            cursor: pointer; /* Pointer cursor on hover */
+            font-size: 1em; /* Button font size */
+            font-family: 'Times New Roman', serif; /* Button font family */
+            padding: 5px 15px; /* Padding inside the button */
+            border-radius: 5px; /* Rounded corners for the button */
+            transition: background-color 0.3s, border-color 0.3s, color 0.3s; /* Smooth transition for hover effects */
+            display: inline-block; /* Make button behave like a link */
+            text-transform: uppercase; /* Uppercase text for the button */
+        }
+
+        .navbar ul li button:hover {
+            background-color: #FF1493; /* Background color on hover */
+            border-color: #FF1493; /* Border color on hover */
+            color: white; /* Text color on hover */
+        }
+
+        /* Header styles */
+        #header-img {
+            width: 50%; /* Set the image width */
+            height: auto; /* Maintain aspect ratio */
+            display: block; /* Display as a block element */
+            margin: 20px auto; /* Center the image with margin */
+        }
+
+        /* About section styles */
+        p {
+            margin: 20px; /* Margin around paragraphs */
+        }
+
+        /* Dark mode styles */
+        body.dark-mode {
+            background-color: #333; /* Dark background color */
+            color: #ccc; /* Light text color */
+        }
+
+        body.dark-mode .navbar-container {
+            background-color: #222; /* Dark background for navbar in dark mode */
+        }
+
+        body.dark-mode .navbar ul li a {
+            color: #ccc; /* Light link color in dark mode */
+        }
+
+        body.dark-mode .navbar ul li button {
+            color: white; /* Light button text color in dark mode */
+            border: 2px solid #666; /* Border color in dark mode */
+        }
+    </style>
 </head>
 <body>
-    <h1>About Us</h1>
-    <img id="header-img" src="https://media.istockphoto.com/id/1375105095/vector/multi-ethnic-group-of-beautiful-women.jpg?s=612x612&w=0&k=20&c=B4zFDjAiQPuR1bOqgNTJU0s7prOpLUDmN7HWCQ5HW7A=" alt="Header Image">
-    <p>Our mission is to provide education, support, and resources to women affected by breast cancer, empowering them to navigate their journey with confidence and resilience.</p>
-   <p>We envision a world where every woman has access to comprehensive support and resources throughout her breast cancer journey, enabling her to live a full and healthy life.</p>
+    <div class="navbar-container">
+        <div class="navbar">
+            <ul>
+                <!-- Navigation links -->
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="FAQs.html">FAQs</a></li>
+                <li><a href="Resources.html">Resources</a></li>
+                <li><a href="BreastCancer.html">Breast Cancer</a></li>
+                <li><button id="theme-button">Toggle Dark Mode</button></li> <!-- Button to toggle dark mode -->
+            </ul>
+        </div>
+    </div>
+
+    <h1>About Us</h1> <!-- Main heading -->
+    <img id="header-img" src="https://media.istockphoto.com/id/1375105095/vector/multi-ethnic-group-of-beautiful-women.jpg?s=612x612&w=0&k=20&c=B4zFDjAiQPuR1bOqgNTJU0s7prOpLUDmN7HWCQ5HW7A=" alt="Header Image"> <!-- Header image -->
+
+    <p>Our mission is to provide education, support, and resources to women affected by breast cancer, empowering them to navigate their journey with confidence and resilience.</p> <!-- Mission statement -->
+
+    <p>We envision a world where every woman has access to comprehensive support and resources throughout her breast cancer journey, enabling her to live a full and healthy life.</p> <!-- Vision statement -->
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => { // Wait for the DOM to load
+            const themeButton = document.getElementById('theme-button'); // Get the theme toggle button
+            const darkMode = localStorage.getItem('dark-mode') === 'true'; // Check for dark mode preference in localStorage
+
+            if (darkMode) {
+                document.body.classList.add('dark-mode'); // Apply dark mode if preference is set
+            }
+
+            themeButton.addEventListener('click', () => { // Add click event listener to the button
+                document.body.classList.toggle('dark-mode'); // Toggle dark mode class
+                localStorage.setItem('dark-mode', document.body.classList.contains('dark-mode')); // Save preference
+            });
+        });
+    </script>
 </body>
 </html>
-<style>
-    /* CSS rules for the background color and image */
-    body {
-        background-color: #fff; /* Change this to the desired background color */
-        text-align: center; /* Center align text */
-    }
-
-    #header-img {
-        width: 50%; /* Adjust the width as needed */
-        height: auto; /* Maintain aspect ratio */
-        display: block; /* Center the image */
-        margin: 0 auto; /* Center the image horizontally */
-        margin-top: 20px; /* Add margin to space from the top */
-    }
-</style>
