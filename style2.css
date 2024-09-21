@@ -1,0 +1,78 @@
+/* Center the title */
+.centered-title {
+    text-align: center;
+    margin-top: 20px; /* Adjust as needed */
+    font-family: 'pacifico', cursive;
+    font-weight: bold;
+    color: hotpink;
+    font-size: 50px;
+}
+
+/* Style the container for image with text */
+.image-with-text {
+    display: flex;
+    align-items: center; /* Align items vertically */
+}
+
+/* Style the image */
+.image-with-text img {
+    margin-right: 180px; /* Adjust as needed for spacing between image and text */
+}
+
+/* Style the text */
+.image-with-text p {
+    text-align: center; /* Center the text horizontally */
+    margin: 0; /* Remove default margin */
+}
+
+/* Adjust the size of the text */
+.container .image-with-text p {
+    font-size: 26px; /* Adjust the font size as needed */
+}
+
+/* Hide default bullets */
+.container .image-with-text ul {
+    list-style-type: none;
+    padding-left: 0; /* Remove default padding */
+}
+
+/* Set background image for bullet points */
+.container .image-with-text ul li {
+    background-image: url('path/to/your/bullet-image.png'); /* Replace 'path/to/your/bullet-image.png' with the actual path to your bullet image */
+    background-size: contain; /* Adjust the size of the bullet image */
+    background-repeat: no-repeat; /* Prevent the bullet image from repeating */
+    background-position: left center; /* Position the bullet image */
+    padding-left: 40px; /* Adjust the spacing between the bullet image and the text */
+    font-size: 2em; /* Adjust the font size using em units */
+}
+/* Set background color of the page */
+body {
+    background-color:#fff /* Light gray background color */
+}
+
+/* Style for the footer */
+.footer {
+  position: fixed;
+  height: 10px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: lightgray; /* Dark background color
+    */
+  color: purple; /* Text color */
+  padding: 5px; /* Padding around the content */
+  text-align: center;
+}
+
+/* Style for the links in the footer */
+.footer a {
+  color: purple; /* Link color */
+  text-decoration: none; /* Remove underline */
+  margin-right: 20px; /* Spacing between links */
+}
+
+/* Style for the links on hover */
+.footer a:hover {
+  text-decoration: underline; /* Underline on hover */
+  color: blue; 
+}
