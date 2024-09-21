@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!-- Specifies the character encoding for the document -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Sets viewport for responsive design -->
+    <title>FAQs - LadyLife Wellness</title> <!-- Title of the page displayed in the browser tab -->
+    <link rel="stylesheet" href="style.css"> <!-- Link to the main CSS file for styling -->
+    <link rel="stylesheet" href="FAQs.css"> <!-- Link to the FAQ-specific CSS file -->
+    <style>
+        /* Add styles for dark mode */
+        body.dark-mode {
+            background-color: #333; /* Dark background for dark mode */
+            color: #fff; /* Light text color for contrast */
+        }
+        .navbar-container.dark-mode {
+            background-color: #444; /* Darker background for navbar in dark mode */
+        }
+
+        /* General styles */
+        body {
+            display: flex; /* Use flexbox for layout */
+            flex-direction: column; /* Stack elements vertically */
+            align-items: center; /* Center align the content */
+            margin: 0; /* Remove default margin */
+            font-family: 'Times New Roman', Times, serif; /* Set font family for text */
+            background-color: #f9f9f9; /* Light background color */
+            transition: background-color 0.3s, color 0.3s; /* Smooth transition for color changes */
+        }
+
+        /* Navigation bar styles */
+        .navbar-container {
+            background-color: white; /* White background for the navbar */
+            color: black; /* Black text color for navbar */
+            position: fixed; /* Fix the navbar to the top of the viewport */
+            width: 100%; /* Full width of the navbar */
+            top: 0; /* Position the navbar at the top */
+            z-index: 1000; /* Ensure the navbar is above other content */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth effect */
+        }
+
+        .navbar {
+            display: flex; /* Use flexbox for navbar items */
+            justify-content: center; /* Center navbar items */
+            padding: 10px 15; /* Padding for the navbar */
+        }
+
+        .navbar ul {
+            list-style-type: none; /* Remove default list styling */
+            padding: 15; /* Padding for the list */
+            margin: 0; /* Remove margin from the list */
+            display: flex; /* Display list items in a row */
+            justify-content: center; /* Center the list items */
+        }
+
+        .navbar ul li {
+            margin: 0 15px; /* Space between list items */
+        }
+
+        .navbar ul li a {
+            color: black; /* Black text color for links */
+            text-decoration: none; /* Remove underline from links */
+            padding: 5px 10px; /* Padding around link text */
+            transition: font-weight 0.3s, color 0.3s; /* Smooth transition for hover effects */
+        }
+
+        .navbar ul li button {
+            background-color: transparent; /* No background for the button */
+            border: 1px solid black; /* Black border for the button */
+            color: black; /* Black text color for the button */
+            cursor: pointer; /* Pointer cursor on hover */
+            font-size: 1em; /* Font size for button text */
+            padding: 10px 15px; /* Padding for button */
+            border-radius: 5px; /* Rounded corners for button */
+            transition: background-color 0.3s, border-color 0.3s, color 0.3s; /* Smooth transition for hover effects */
+        }
+
+        .navbar ul li button:hover {
+            background-color: #FF1493; /* Pink background on button hover */
+            border-color: #FF1493; /* Pink border on button hover */
+            color: white; /* White text on button hover */
+        }
+
+        /* Header styles */
+        .header-container {
+            padding: 35px 20px 20px; /* Space for fixed navbar above */
+            text-align: center; /* Center align the header text */
+        }
+
+        /* FAQ content styles */
+        .content-container {
+            margin-top: 20px; /* Margin above the content */
+            width: 80%; /* Width of the content area */
+            max-width: 800px; /* Maximum width for larger screens */
+            text-align: center; /* Center align the FAQ text */
+        }
+
+        .faq-question {
+            font-weight: bold; /* Bold style for questions */
+            margin: 15px 0; /* Margin above and below questions */
+        }
+
+        .faq-answer {
+            margin: 10px 0 20px; /* Margin above and below answers */
+        }
+
+        /* Dark mode styles */
+        body.dark-mode .navbar-container {
+            background-color: #222; /* Dark background for navbar in dark mode */
+        }
+
+        body.dark-mode .navbar ul li a {
+            color: #ccc; /* Light text color for links in dark mode */
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation bar -->
+    <div class="navbar-container">
+        <div class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li> <!-- Link to Home page -->
+                <li><a href="about.html">About</a></li> <!-- Link to About page -->
+                <li><a href="FAQs.html">FAQs</a></li> <!-- Link to FAQs page -->
+                <li><a href="Resources.html">Resources</a></li> <!-- Link to Resources page -->
+                <li><a href="BreastCancer.html">Breast Cancer</a></li> <!-- Link to Breast Cancer page -->
+                <li><button id="theme-button">Toggle Dark Mode</button></li> <!-- Button to toggle dark mode -->
+            </ul>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <div class="header-container">
+        <h1>Frequently Asked Questions (FAQs)</h1> <!-- Main heading for the FAQs section -->
+    </div>
+
+    <!-- Content -->
+    <div class="content-container">
+        <p class="faq-question"><strong>Q1:</strong> What are the common symptoms of breast cancer?</p>
+        <p class="faq-answer">Common symptoms of breast cancer include a lump or mass in the breast or underarm area, swelling of all or part of a breast, skin irritation or dimpling, pain in the breast or nipple, and nipple discharge other than breast milk, especially if it is bloody.</p>
+
+        <p class="faq-question"><strong>Q2:</strong> What are the main risk factors for developing breast cancer?</p>
+        <p class="faq-answer">The main risk factors for developing breast cancer include age, gender (being female), family history of breast cancer, genetic mutations (such as BRCA1 and BRCA2), hormonal factors, and lifestyle factors like alcohol consumption and obesity.</p>
+
+        <p class="faq-question"><strong>Q3:</strong> How can I reduce my risk of breast cancer?</p>
+        <p class="faq-answer">To reduce the risk of breast cancer, you can adopt a healthy lifestyle by exercising regularly, maintaining a healthy weight, limiting alcohol intake, not smoking, and considering regular screening tests such as mammograms as recommended by your healthcare provider.</p>
+
+        <p class="faq-question"><strong>Q4:</strong> What is the importance of early detection in breast cancer?</p>
+        <p class="faq-answer">Early detection of breast cancer is crucial because it increases the chances of successful treatment and survival. Regular screening tests like mammograms can help detect cancer at an early stage when it is most treatable.</p>
+
+        <p class="faq-question"><strong>Q5:</strong> What are the common treatments for breast cancer?</p>
+        <p class="faq-answer">Common treatments for breast cancer include surgery (to remove the tumor or breast), radiation therapy, chemotherapy, hormone therapy, and targeted therapy. The treatment plan depends on the type and stage of the cancer, as well as the patient's overall health.</p>
+
+        <p class="faq-question"><strong>Q6:</strong> Can men get breast cancer?</p>
+        <p class="faq-answer">Yes, men can get breast cancer, though it is much less common than in women. Men with a family history of breast cancer or certain genetic mutations are at higher risk. Symptoms in men include lumps in the breast, changes in breast tissue, or discharge from the nipple.</p>
+
+        <p class="faq-question"><strong>Q7:</strong> How can I support a loved one who is battling breast cancer?</p>
+        <p class="faq-answer">Supporting a loved one with breast cancer involves being there for them emotionally, offering practical help with daily tasks, accompanying them to appointments, and helping them access support services. Listening and showing empathy can also be very comforting.</p>
+
+        <p class="faq-question"><strong>Q8:</strong> Where can I find additional resources and support for breast cancer?</p>
+        <p class="faq-answer">Additional resources and support for breast cancer can be found through organizations like the American Cancer Society, National Breast Cancer Foundation, and local support groups. Websites, hotlines, and community programs can provide valuable information and assistance.</p>
+    </div>
+
+    <!-- JavaScript for dark mode toggle -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => { // Wait for the DOM to fully load
+            const themeButton = document.getElementById('theme-button'); // Get the dark mode toggle button
+            const darkMode = localStorage.getItem('dark-mode') === 'true'; // Check local storage for dark mode preference
+
+            if (darkMode) {
+                document.body.classList.add('dark-mode'); // Add dark mode class if preference is set
+            }
+
+            themeButton.addEventListener('click', () => { // Add click event listener to the button
+                const isDarkMode = document.body.classList.toggle('dark-mode'); // Toggle dark mode class
+                localStorage.setItem('dark-mode', isDarkMode); // Save preference to local storage
+            });
+        });
+    </script>
+</body>
+</html>
