@@ -1,0 +1,203 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resources - LadyLife Wellness</title>
+    <link rel="stylesheet" href="resources.css">
+    <style>
+        /* Include the navigation bar styles */
+        .navbar-container {
+            background-color: white; /* Background color for the navbar */
+            color: black; /* Text color for the navbar */
+            position: fixed; /* Fix the navbar to the top */
+            width: 100%; /* Full width */
+            top: 0; /* Align to the top */
+            padding: 5px;
+            z-index: 1000; /* Ensure it stays on top of other content */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+            transition: background-color 0.3s; /* Smooth transition for background color */
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: center; /* Center the navbar items */
+            align-items: center; /* Align items vertically */
+            padding: 5px 0; /* Add padding for vertical spacing */
+        }
+
+        .navbar ul {
+            list-style-type: none; /* Remove default list styling */
+            padding: 0;
+            margin: 0;
+            display: flex; /* Display items in a row */
+            align-items: center; /* Align items vertically */
+        }
+
+        .navbar ul li {
+            margin: 0 10px; /* Space between links */
+        }
+
+        .navbar ul li a {
+            color: black; /* Black text for navigation links */
+            text-decoration: none; /* Remove underline */
+            padding: 5px 10px; /* Padding around text */
+            display: inline-block; /* Ensure padding is applied correctly */
+            font-weight: normal; /* Normal weight by default */
+            transition: font-weight 0.3s, color 0.3s; /* Smooth transition for font-weight and color */
+        }
+
+        .navbar ul li a:hover {
+            font-weight: bold; /* Make text bold on hover */
+            color: black; /* Optional: Change color on hover */
+        }
+
+        .navbar ul li button {
+            background-color: white; /* White background for the button */
+            border: 1px solid black; /* Black border for the button */
+            color: black; /* Black text color for the button */
+            cursor: pointer; /* Pointer cursor for the button */
+            font-size: 1em; /* Font size for the button */
+            font-family: 'Times New Roman', serif; /* Times New Roman font */
+            padding: 5px 15px; /* Padding around the button text */
+            border-radius: 5px; /* Rounded corners for the button */
+            transition: background-color 0.3s, border-color 0.3s, color 0.3s; /* Smooth transition for background and border color */
+            display: inline-block; /* Ensure button appears on the same line */
+            text-transform: uppercase; /* Make text uppercase */
+        }
+
+        .navbar ul li button:hover {
+            background-color: #FF1493; /* Pink background on hover */
+            border-color: #FF1493; /* Pink border on hover */
+            color: white; /* White text color on hover */
+        }
+
+        /* Additional styles for the page */
+        .header-container {
+            text-align: center; /* Center the header content */
+            margin-top: 80px; /* Adjust margin-top to account for fixed navbar */
+        }
+
+        .header-image {
+            width: 100%; /* Make the image full-width */
+            height: auto; /* Maintain aspect ratio */
+        }
+
+        .centered-title {
+            text-align: center; /* Center the title */
+        }
+
+        .highlighted-title {
+            color: #FF1493; /* Example color */
+        }
+
+        /* Dark mode styles */
+        body.dark-mode .navbar-container {
+            background-color: #222; /* Dark background for the navbar in dark mode */
+        }
+
+        body.dark-mode .navbar ul li a {
+            color: #ccc; /* Light text color for navbar links in dark mode */
+        }
+
+        body.dark-mode .navbar ul li button {
+            color: white; /* Light text color for the button in dark mode */
+            border: 2px solid #666; /* Darker gray border for the button in dark mode */
+        }
+
+        /* Dark mode button hover effect */
+        body.dark-mode .navbar ul li button:hover {
+            background-color: #FF1493; /* Pink background on hover in dark mode */
+            border-color: #FF1493; /* Pink border on hover in dark mode */
+            color: white; /* White text color on hover in dark mode */
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation bar -->
+    <div class="navbar-container">
+        <div class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="FAQs.html">FAQs</a></li>
+                <li><a href="Resources.html">Resources</a></li>
+                <li><a href="BreastCancer.html">Breast Cancer</a></li>
+                <li><button id="theme-button">Toggle Dark Mode</button></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Header image -->
+    <div class="header-container">
+        <img class="header-image" src="https://thumbs.dreamstime.com/b/breast-cancer-pink-ribbon-woman-eps-24976369.jpg" alt="Header image">
+    </div>
+
+    <!-- Title centered using CSS -->
+    <h1 class="centered-title highlighted-title">Resources</h1>
+
+    <!-- Organizations Section -->
+    <h2>Organizations</h2>
+    <div>
+        <p><strong>Komen</strong></p>
+        <p class="description">Komen is dedicated to saving lives by meeting the most critical needs in our communities and investing in breakthrough research to prevent and cure breast cancer.</p>
+        <a href="https://www.komen.org/">https://www.komen.org/</a>
+    </div>
+    <div>
+        <p><strong>National Breast Cancer Foundation</strong></p>
+        <p class="description">The National Breast Cancer Foundation provides access to vital services, education, and support for women battling breast cancer.</p>
+        <a href="https://www.nationalbreastcancer.org/our-programs/">https://www.nationalbreastcancer.org/our-programs/</a>
+    </div>
+    <div>
+        <p><strong>American Breast Cancer Foundation</strong></p>
+        <p class="description">The American Breast Cancer Foundation helps provide grants for diagnostic testing and support services for women in need.</p>
+        <a href="https://www.abcf.org/">https://www.abcf.org/</a>
+    </div>
+
+    <!-- Volunteer Section -->
+    <h2>Volunteer</h2>
+    <p class="description">Volunteering is a powerful way to make a positive impact on the lives of those affected by breast cancer. By offering your time and skills, you contribute to essential support services, help raise awareness, and provide hope and comfort to individuals and families in need.</p>
+    <p><a href="https://volunteer.nbcf.org/need/">Explore Volunteer Opportunities</a></p>
+
+    <!-- Support Groups Section -->
+    <h2>Support Groups</h2>
+    <div>
+        <p><strong>Request a Mentor</strong></p>
+        <a href="https://imermanangels.org/find-mentor-angel/">https://imermanangels.org/find-mentor-angel/</a>
+    </div>
+    <div>
+        <p><strong>Become a Mentor</strong></p>
+        <a href="https://imermanangels.org/give-support/">https://imermanangels.org/give-support/</a>
+    </div>
+
+    <!-- Komen Helpline Section -->
+    <div>
+        <h2>Komen Helpline</h2>
+        <p class="description">For more information and resources regarding breast cancer and breast health, contact the Susan G. Komen Breast Care Helpline:</p>
+        <p>Call: 1-877-465-6636</p>
+        <p>Email: <a href="mailto:helpline@komen.org">helpline@komen.org</a></p>
+    </div>
+
+    <!-- External link box -->
+    <div class="external-link-box">
+        <a href="https://www.nationalbreastcancer.org/breast-cancer-support/hope-kit/?form=donate">Click to Donate Today</a>
+    </div>
+
+    <!-- JavaScript for dark mode toggle -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const themeButton = document.getElementById('theme-button');
+            const darkMode = localStorage.getItem('dark-mode') === 'true';
+
+            if (darkMode) {
+                document.body.classList.add('dark-mode');
+            }
+
+            themeButton.addEventListener('click', () => {
+                const isDarkMode = document.body.classList.toggle('dark-mode');
+                localStorage.setItem('dark-mode', isDarkMode);
+            });
+        });
+    </script>
+</body>
+</html>
