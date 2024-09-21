@@ -1,0 +1,89 @@
+/* CSS for styling the header image */
+.header-container {
+    background-color: pink; /* Set the background color */
+    padding: 20px; /* Add padding for spacing */
+}
+
+img.header-image {
+    display: block;
+    margin: 0 auto; /* Center align the image horizontally */
+    max-width: 15%; /* Set maximum width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Center the title */
+.centered-title {
+    text-align: center;
+    margin-top: 10px; /* Adjust as needed */
+    font-family: 'Pacifico', cursive;
+    font-weight: bold;
+    color: deeppink;
+    background-color: #eaeaea;
+    font-size: 50px;
+    padding: 20px; /* Optional: Padding for title spacing */
+}
+
+/* Style for section headings (category names) */
+h2 {
+    font-weight: bold; /* Bold the category names */
+    margin-top: 20px;
+    font-family: 'Times New Roman', serif;
+    font-size: 25px;
+    color: black;
+}
+
+/* Style for descriptions */
+.description {
+    font-size: 16px; /* Set font size to 16px */
+    font-family: 'Times New Roman', Times, serif; /* Use Times New Roman font */
+    color: #555; /* Slightly darker text for descriptions */
+    margin-top: 5px;
+}
+
+/* Remove bolding from other text */
+p {
+    font-weight: normal; /* Ensure regular text is not bold */
+    color: black; /* Text color */
+    font-size: 20px; /* Font size */
+}
+
+/* Ensure links are styled consistently */
+a {
+    color: deeppink; /* Link color */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Make text bold */
+}
+
+a:hover {
+    text-decoration: underline; /* Underline on hover */
+    color: blue; /* Change link color to blue on hover */
+}
+
+/* CSS for styling the external link box */
+.external-link-box {
+    background-color: lightgray; /* Set the background color to gray */
+    padding: 10px; /* Padding around the content */
+    text-align: center; /* Center align the content */
+    margin-top: 20px; /* Add space between the content and the external link box */
+    border-radius: 8px; /* Optional: Rounded corners for the box */
+}
+
+/* Style the link inside the external link box */
+.external-link-box a {
+    color: deeppink; /* Link color set to white for contrast */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Make text bold */
+    font-family: 'Times New Roman', Times, serif; /* Ensure consistent font family */
+    font-size: 22px; /* Font size for the link */
+}
+
+/* Change color on hover for links inside the external link box */
+.external-link-box a:hover {
+    color: blue; /* Change link color to blue on hover */
+    text-decoration: underline; /* Underline on hover for better visibility */
+}
+.facts h2 {
+    font-family: 'Times New Roman', serif; /* Set font to Times New Roman */
+    color: #ff69b4; /* Pink color for the heading */
+    font-size: 2em; /* Adjust the font size as needed */
+    margin-top: 0; /* Remove default margin */
