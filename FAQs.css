@@ -1,0 +1,88 @@
+/* General styles for the FAQ page */
+body {
+    font-family: 'Times New Roman', Times, serif; /* Ensure a clean and readable font */
+    line-height: 1.6; /* Improve readability with line spacing */
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9; /* Light background for the FAQ page */
+}
+
+/* Navigation bar styles */
+.navbar-container {
+    background-color: white; /* White background for navigation */
+    color: black; /* Black text color for navigation links */
+    position: fixed; /* Fix the navbar to the top */
+    width: 100%; /* Full width */
+    top: 0; /* Align to the top */
+    z-index: 1000; /* Ensure it stays on top of other content */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+}
+
+.navbar {
+    display: flex;
+    justify-content: center; /* Center the navbar items */
+    padding: 20px 0; /* Add padding for vertical spacing */
+}
+
+.navbar ul {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Display items in a row */
+}
+
+.navbar ul li {
+    margin: 0 10px; /* Space between links */
+}
+
+.navbar ul li a {
+    color: black; /* Black text for navigation links */
+    text-decoration: none; /* Remove underline */
+    padding: 10px 10px; /* Padding around text */
+    display: inline-block; /* Ensure padding is applied correctly */
+}
+
+/* Header styles */
+.header-container {
+    text-align: center; /* Center the header text */
+    background-color: #fff; /* White background for the header */
+    padding: 20px; /* Add padding around the header */
+    padding-top: 40px; /* Space for fixed navbar */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.header-container h1 {
+    margin: 0; /* Remove default margin */
+    color: deeppink; /* Dark color for the header text */
+}
+
+/* Content styles */
+.content-container {
+    padding: 20px;
+    max-width: 800px; /* Constrain content width */
+    margin: 0 auto; /* Center the content */
+}
+
+/* FAQ question styles */
+.faq-question {
+    font-weight: bold; /* Make questions bold */
+    color: black; /* Ensure questions are in black */
+    margin: 15px 0; /* Add spacing above and below each question */
+}
+
+/* FAQ answer styles */
+.faq-answer {
+    margin: 0 0 15px 0; /* Add spacing below each answer */
+    padding-left: 20px; /* Indent answers */
+}
+
+/* Footer styles (if applicable) */
+.footer {
+    text-align: center; /* Center footer text */
+    padding: 10px;
+    background-color: #333; /* Dark background for footer */
+    color: #fff; /* White text for footer */
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
