@@ -1,0 +1,445 @@
+/* Header ruleset */
+.header-item {
+  padding-top: 70px;
+  /* Add padding to the top of the header */
+  margin-bottom: 20px;
+  /* Add margin to the bottom of the header */
+  text-align: center;
+  /* Center-align text within the header */
+}
+
+h1 {
+  color: hotpink;
+  font-family: 'Pacifico', cursive;
+  font-size: 60px;
+  font-weight: bold;
+}
+
+/* Header-left and Header-right rulesets */
+#header-left,
+#header-right {
+  width: 50%;
+  /* Set width to 50% for each */
+}
+
+/* Header-img ruleset */
+#header-img {
+  margin: 0 auto;
+  /* Center the image horizontally */
+  width: 400px;
+  /* Set width of the image */
+  max-width: 100%;
+  /* Cap the maximum width of the image */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  /* Add a subtle shadow */
+}
+
+/* Header-button ruleset */
+.header-button {
+  background-color: #FF69B4;
+  /* Pink background color */
+  color: white;
+  /* White text color */
+  font-size: 18px;
+  padding: 100px 100px;
+  /* Increased padding for larger surface area */
+  margin: 0 5px;
+  /* Add margin to separate buttons */
+  border: 2px solid transparent;
+  /* Add a border with transparent color */
+  cursor: pointer;
+  border-radius: 20px;
+  /* Add rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  /* Add a subtle shadow */
+  text-decoration: none;
+  /* Remove default text decoration */
+  font-family: Arial, sans-serif;
+  /* Change font family */
+}
+
+/* Header-button hover effect */
+.header-button:hover {
+  background-color: #FF1493;
+  /* Darker pink on hover */
+  border-color: #FF1493;
+  /* Change border color on hover */
+}
+
+/* Paragraph style */
+p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+/* Heading style */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #FF1493;
+  /* Add styles for headings as needed */
+}
+
+/* Link styles */
+a:link {
+  color: #007bff;
+  /* default link color */
+  text-decoration: none;
+  /* remove underline */
+}
+
+a:visited {
+  color: purple;
+  /* visited link color */
+}
+
+a:hover {
+  color: black;
+  /* hover link color */
+}
+
+a:active {
+  color: #dc3545;
+  /* active link color */
+}
+
+/* Footer ruleset */
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #eaeaea;
+  /* Dark background color */
+  color: #fff;
+  /* White text color */
+  text-align: center;
+  /* Center-align text */
+  padding: 20px 0;
+  /* Add padding to top and bottom */
+}
+
+/* Part 1: Navbar */
+
+/* General style rule set for all items in ul */
+.navbar ul {
+  list-style: none;
+  padding: 0;
+  overflow: hidden;
+  /* Hide overflowing content */
+  position: fixed;
+  /* Fixed position to stay on top */
+  top: 0;
+  width: 100%;
+  margin-bottom: 20px;
+  /* Add margin at the bottom */
+}
+
+/* Style rule set for individual li */
+.navbar ul li {
+  float: left;
+  /* Float the list items to create horizontal layout */
+  margin: 10px;
+  /* Add margin around the list items */
+}
+
+/* Style rule set for individual li link */
+.navbar ul li a {
+  display: block;
+  /* Convert links to block elements for better styling */
+  text-decoration: none;
+  /* Remove underline from links */
+  color: black;
+  /* Set text color */
+  font-size: 16px;
+  /* Set font size */
+  text-align: center;
+  /* Center-align text */
+  padding: 10px 20px;
+  /* Add padding to the links */
+}
+
+/* Style rule set for hovered link */
+.navbar ul li a:hover {
+  font-weight: bold;
+  /* Bold font weight on hover */
+}
+
+/* Customize Dark Mode Theme */
+.dark-mode {
+  background-color: black;
+  /* Set background color to black */
+  color: white;
+  /* Set text color to white */
+}
+
+/* Additional dark mode styling */
+.dark-mode .navbar ul li a {
+  color: white;
+  /* Change link text color to white in dark mode */
+}
+
+.dark-mode .navbar ul li a:hover {
+  font-weight: bold;
+  /* Bold font weight on hover in dark mode */
+}
+
+.dark-mode .footer {
+  background-color: #333;
+  /* Dark background color for footer in dark mode */
+  color: #fff;
+  /* White text color for footer in dark mode */
+}
+
+/* Add style to button */
+#theme-button {
+    font-family: 'Times New Roman', Times, serif; /* Set font to Times New Roman */
+    background-color: white; /* Set background color to white */
+    color: black; /* Set text color to black */
+    font-size: 12px; /* Set font size */
+    padding: 10px 20px; /* Adjust padding for a rectangular shape */
+    border: 1px solid black; /* Black border around the button */
+    border-radius: 5px; /* Slightly rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    text-transform: uppercase; /* Uppercase text for emphasis */
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Smooth transition for hover effects */
+  }
+/* Button hover effect */
+#theme-button:hover {
+  background-color: black;
+  color: pink;
+  border-color: black; 
+  /* Darker green on hover */
+}
+
+/* Additional CSS for petition container, paragraph, and signatures */
+.petition-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  width: 100%;
+  padding-bottom: 10px;
+}
+
+.petition-para {
+  width: 55%;
+  padding-right: 10px;
+}
+
+.signatures {
+  width: 100%;
+  padding-right: 10px;
+}
+
+/* Add to CSS file */
+.error {
+  border-style: solid;
+  border-width: 2px;
+  border-color: red;
+  background: pink;
+}
+
+.header-container {
+  margin-top: 100px;
+}
+
+#sign-petition {
+  height: 50px;
+}
+
+#sign-now-button {
+  height: 60px;
+
+}
+
+.content-container {
+  text-align: center;
+  /* Center-align content within the container */
+}
+
+/* Increase button size in content container */
+.content-container button {
+
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+
+}
+
+#sign-petition {
+  display: flex;
+  align-items: center;
+  /* Align items vertically */
+  flex-wrap: wrap;
+  /* Allow items to wrap */
+}
+
+#sign-petition label,
+#sign-petition input {
+  margin-bottom: 10px;
+  /* Add some vertical spacing between input elements */
+}
+
+#sign-now-button {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 5px 10px;
+  width: 100px; /* Set a fixed width */
+  height: 30px; /* Set a fixed height */
+  /*adjust padding to make sign now button more rectangular shaped*/
+  border: 2px solid #ccc;
+  /* Add border */
+  border-radius: 5px;
+  /* Add border-radius for rounded corners */
+  border-color: hotpink;
+  color: hotpink;
+}
+
+#sign-now-button:hover {
+  background-color: hotpink;
+  /* Change background color to pink on hover */
+  border-color: hotpink;
+  /* Change border color on hover */
+  color: white;
+  /* Change text color on hover */
+}
+
+/* Center buttons */
+.content-container button {
+  display: center;
+  /* Change buttons to block elements */
+
+}
+
+/* Adjust font size for questions */
+.content-container h3 {
+  font-size: 25px;
+  /* Adjust the font size to your preference */
+}
+
+
+.breast-cancer-info {
+  font-size: 20px;
+  /* Adjust the font size as desired */
+}
+
+/* Header Container */
+.header-container {
+  background-color: #f4f1f1;
+  /* Add light gray background color */
+  padding: 20px;
+  /* Add padding for spacing */
+}
+
+/* Header Text Container */
+#header-text-container {
+  text-align: center;
+  /* Center-align the text */
+}
+
+.title-font {
+  font-family: 'Pacifico', cursive;
+  /* Use the same font family as the title */
+  font-size: 30px;
+  /* Use the same font size as the title */
+  font-weight: bold;
+  /* Use the same font weight as the title */
+  color: hotpink;
+  /* Use the same color as the title */
+}
+
+/* Center-align text in the middle of the page */
+.container {
+  display: flex;
+  justify-content: center;
+  /* Horizontally center the content */
+  align-items: center;
+  /* Vertically center the content */
+  height: 100vh;
+  /* Set the height of the container to full viewport height */
+}
+
+/* CSS for revealable class */
+.revealable {
+  position: relative;
+  /* Allow containers to move without affecting other elements */
+  transform: translateY(150px);
+  /* Move elements downwards initially */
+  opacity: 0;
+  /* Make elements transparent initially */
+  transition: all 2s ease;
+  /* Smooth transition for all properties over 2 seconds */
+}
+
+/* CSS for active class */
+.active {
+  transform: translateY(0px);
+  /* Move elements back to original position */
+  opacity: 1;
+  /* Make elements fully visible */
+}
+
+/* the modal that covers the background and prevents user interactions */
+.modal {
+  display: none; /* hides the modal from view by default*/
+  position: fixed; /* keeps the modal in one place */
+  z-index: 2; /* positions the modal on top of all other elements on the screen */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background-color: rgba(0,0,0,0.4); /* 40% opacity black - other elements can still be seen */
+  flex-direction: column; /* these flexbox rules center the content on the screen */
+  align-items: center;
+  justify-content: center;
+}
+
+/* box that contains all the content and images */
+.modal-content {
+  background-color: #e7e4e4; 
+  text-align: center;
+  font-size: 3rem;
+  display: flex; /* adds flexbox to center all items */
+  justify-content: center;
+  align-items: center;
+}
+
+#thanks-modal-content {
+width: 20rem; /* sets a default width for the text container */
+  font-size: 30px;
+  font-weight: bold;
+  font-family: "Pacifico", cursive;
+}
+
+#modal-text-container {
+  display: flex; /* adds flexbox to center the text and buttons (stretch feature) */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-container {
+  text-align: center;
+  /* Center-align content within the container */
+  padding-bottom: 60px; /* Add some padding to the bottom */
+}
+.footer {
+  height: 2px; /* Adjust the height to your desired value */
+  background-color: #eaeaea;
+  text-align: center;
+  padding: 20px 0;
+}
+.navbar {
+    display: flex;
+    justify-content: center; /* Center the navbar items */
+    align-items: center; /* Align items vertically */
+    max-width: 1200px; /* Max width to prevent stretching */
+    margin: 0 auto; /* Center the navbar */
+    padding: 5px 0; /* Add padding for vertical spacing */
+}
+/* Navbar styles */
